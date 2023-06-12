@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculadora</title>
+  <h1>Calculadora</h1>
+  
+  <div class="input-field">
+    <label for="num1">Número 1:</label>
+    <input type="number" id="num1">
+  </div>
+
+  <div class="input-field">
+    <label for="num2">Número 2:</label>
+    <input type="number" id="num2">
+  </div>
+
+  <button class="button" onclick="calculate()">Calcular</button>
+
+  <div id="result"></div>
+
+  <script>
+    function calculate() {
+      var num1 = parseFloat(document.getElementById('num1').value);
+      var num2 = parseFloat(document.getElementById('num2').value);
+
+      var result = num1 + num2; // Modifique esta linha para realizar o cálculo desejado
+
+      document.getElementById('result').innerText = 'Resultado: ' + result;
+    }
+  </script>
+</body>
+</html>
